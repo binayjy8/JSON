@@ -5,3 +5,9 @@ let reqFile = '{"fact":"A cat will tremble or shiver when it is extreme pain.","
 let validRes = JSON.parse(reqFile);
 
 console.log(validRes.fact);
+
+let team = {
+    cricket: "Playhard",
+    total: 123
+
+};
