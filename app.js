@@ -13,4 +13,14 @@
 // };
 let url = "https://catfact.ninja/fact";
 
-fetch(url);
+fetch(url)
+.then((res)=>{
+    console.log(res);
+    return res.json();
+})
+.catch((data)=>{
+    console.log(data);
+})
+.catch((err)=>{
+    console.log(err);
+});
