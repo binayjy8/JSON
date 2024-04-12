@@ -36,8 +36,8 @@ let url = "https://catfact.ninja/fact";
 async function getRandom () {
     try{
         let res = await fetch(url);
-    let data = await res.json();
-    console.log(data);
+        let data = await res.json();
+        console.log(data.fact);
     }
     catch (e){
         console.log(e);
