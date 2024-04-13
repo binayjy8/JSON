@@ -32,14 +32,14 @@
 // });
 
  let url = "https://catfact.ninja/fact";
- let p = document.querySelector("random");
+ let p = document.querySelector("#random");
 
 
  async function getFact() {
     try{
         let res = await axios.get(url);
         let fact = (res.data.fact);
-        let p = fact;
+        p = fact;
     } catch(e) {
         console.log(e);
     }
