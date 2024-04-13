@@ -32,6 +32,7 @@
 // });
 
  let url = "https://catfact.ninja/fact";
+ let p = document.querySelector("random");
 
 
  async function getFact() {
