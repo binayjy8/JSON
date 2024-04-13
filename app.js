@@ -38,7 +38,8 @@
  async function getFact() {
     try{
         let res = await axios.get(url);
-        console.log(res.data.fact);
+        let fact = (res.data.fact);
+        let p = fact;
     } catch(e) {
         console.log(e);
     }
