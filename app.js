@@ -32,16 +32,21 @@
 // });
 
  let url = "https://catfact.ninja/fact";
- let p = document.querySelector("#random");
+ let btn = document.querySelector("button");
 
+btn.addEventListener("click", async()=>{
+    let fact = await getFact();
+    let p = document.querySelector("#random");
+    p.innerText = fact;
+}); 
 
  async function getFact() {
     try{
         let res = await axios.get(url);
-        let fact = (res.data.fact);
-        p = fact;
+        return res.data.fact;
     } catch(e) {
         console.log(e);
+        return "No Fact Found";
     }
  }
  
