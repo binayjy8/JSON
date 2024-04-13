@@ -31,17 +31,15 @@
 //     console.log(err);
 // });
 
-// let url = "https://catfact.ninja/fact";
+ let url = "https://catfact.ninja/fact";
 
-// async function getRandom () {
-//     try{
-//         let res = await fetch(url);
-//         let data = await res.json();
-//         console.log(data.fact);
-//     }
-//     catch (e){
-//         console.log(e);
-//     }
 
-//     console.log("working mode");
-// }
+ async function getFact() {
+    try{
+        let res = await axios.get(url);
+        console.log(res.data);
+    } catch(e) {
+        console.log(e);
+    }
+ }
+ 
