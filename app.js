@@ -66,13 +66,24 @@
 //     }
 //  }
 
-let url = "https://icanhazdadjoke.com/";
+// let url = "https://icanhazdadjoke.com/";
 
-async function getJokes() {
+// async function getJokes() {
+//     try{
+//         const config = { headers: {Accept: "application/json"}};
+//         let res = await axios.get(url, config);
+//         console.log(res.data);
+//     } catch(err) {
+//         console.log(err);
+//     }
+// }
+
+let url = "http://universities.hipolabs.com/search?name=";
+
+async function getCount() {
     try{
-        const config = { headers: {Accept: "application/json"}};
-        let res = await axios.get(url, config);
-        console.log(res.data);
+        let res = await axios.get(url);
+        console.log(res);
     } catch(err) {
         console.log(err);
     }
