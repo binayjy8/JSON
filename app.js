@@ -84,7 +84,7 @@ async function getCount() {
     try{
         let res = await axios.get(url);
         console.log(res);
-    } catch(err) {
-        console.log(err);
+    } catch(e) {
+        console.log(e);
     }
 }
