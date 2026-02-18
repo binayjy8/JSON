@@ -1,1 +1,1 @@
-Binay Bhusan Mohanta is the author an
+Binay Bhusan Mohanta is the author and
